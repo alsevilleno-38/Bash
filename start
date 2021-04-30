@@ -1,2 +1,6 @@
-a=$(echo "mod $(echo "test")")
-echo $a
+text=$(echo -e "a b c\n d")
+
+for item in $text
+do
+    
+done

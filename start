@@ -1,0 +1,2 @@
+a=$(echo "mod $(echo "test")")
+echo $a

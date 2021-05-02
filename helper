@@ -1,4 +1,33 @@
-echo $1
-echo $2
-echo $3
-echo $4
+# # # counter=0
+# # # # while IFS=$';' read -a items -p "What is your item: "
+# # # # do
+# # # #     counter=$(( $counter + 1 ))
+# # # #     echo "line${counter}"
+# # # #     itemNumber=0
+# # # #     for item in ${items[@]}
+# # # #     do
+# # # #         itemNumber=$(( $itemNumber + 1 ))
+# # # #         echo -e "\titem${itemNumber} - $item"
+# # # #     done        
+# # # # done
+
+
+# # IFS=$';'
+# # read -p "What is your item: " -a items
+# # echo ${items[@]}
+# # echo ${#items[@]}
+# # echo ${items[0]}
+# # echo ${items[1]}
+# # echo ${items[2]}
+
+# # # read -p "Type your name" name
+# # # echo $name
+
+# echo $@
+# echo $1
+# echo $2
+
+IFS=';'; read -a args
+
+echo ${args[@]}
+echo ${#args[@]}
